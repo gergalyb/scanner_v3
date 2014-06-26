@@ -1,0 +1,210 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	6
+1	__D0main	6	1	4	4	9
+2	__signed_stack_003main	6	1	8	4	12
+3	__signed_stack_002main	6	1	12	4	6
+4	__constVal200	4	0	16	2	2
+5	__ArrHelper__main_73_0	4	1	18	2	6
+6	__constVal3	2	0	20	1	1
+7	__zfmain	1	1	21	1	2
+8	__ResetSensorPort	1	1	22	1	3
+9	__constVal0	2	1	23	1	4
+10	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	24	1	4
+11	____initialize_global_data_return	1	1	25	1	3
+12	__constVal1	2	0	26	1	2
+13	__constVal13	2	0	27	1	1
+14	__constVal10	2	0	28	1	3
+15	__ResetSensorTmp	1	1	29	1	2
+16	____ResetSensorSubroutine_return	1	1	30	1	3
+17	__TextOutArgs	8	0	4	16	15
+18	__TextOutArgs.Result	2	1	32	1	15
+19	__TextOutArgs.Location	8	0	2	4	15
+20	__TextOutArgs.Location.X	4	1	36	2	15
+21	__TextOutArgs.Location.Y	4	1	38	2	15
+22	__TextOutArgs.Text	7	0	40	4	15
+23	__TextOutArgs.Text.Text_type	1	0	0	1	0
+24	__TextOutArgs.Options	5	1	44	4	15
+25	__PointOutArgs	8	0	3	12	4
+26	__PointOutArgs.Result	2	1	48	1	4
+27	__PointOutArgs.Location	8	0	2	4	4
+28	__PointOutArgs.Location.X	4	1	52	2	4
+29	__PointOutArgs.Location.Y	4	1	54	2	4
+30	__PointOutArgs.Options	5	1	56	4	4
+31	__ColorSensorReadArgs	8	0	7	20	6
+32	__ColorSensorReadArgs.Result	2	1	60	1	6
+33	__ColorSensorReadArgs.Port	1	1	61	1	6
+34	__ColorSensorReadArgs.ColorValue	4	1	62	2	6
+35	__ColorSensorReadArgs.RawArray	7	0	64	4	6
+36	__ColorSensorReadArgs.RawArray.RawArray_type	3	0	0	2	0
+37	__ColorSensorReadArgs.NormalizedArray	7	0	66	4	6
+38	__ColorSensorReadArgs.NormalizedArray.NormalizedArray_type	3	0	0	2	0
+39	__ColorSensorReadArgs.ScaledArray	7	0	68	4	6
+40	__ColorSensorReadArgs.ScaledArray.ScaledArray_type	4	0	0	2	0
+41	__ColorSensorReadArgs.Invalid	1	1	70	1	6
+42	__main_7qG2_scaled_7qG2_000	7	0	72	4	3
+43	__main_7qG2_scaled_7qG2_000.__main_7qG2_scaled_7qG2_000_type	4	0	0	2	0
+44	__main_7qG2_rawdata_7qG2_000	7	0	74	4	3
+45	__main_7qG2_rawdata_7qG2_000.__main_7qG2_rawdata_7qG2_000_type	4	0	0	2	0
+46	__main_7qG2_normdata_7qG2_000	7	0	76	4	3
+47	__main_7qG2_normdata_7qG2_000.__main_7qG2_normdata_7qG2_000_type	4	0	0	2	0
+#SOURCES
+Clump	Line	PC	Source
+0	2	0	#line 2 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	3	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	2	2	#line 2 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	3	2	#line 3 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	4	2		arrinit __main_7qG2_rawdata_7qG2_000, __constVal0, __constVal10
+0	4	6	#line 4 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	5	6		arrinit __main_7qG2_normdata_7qG2_000, __constVal0, __constVal10
+0	5	10	#line 5 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	6	10		arrinit __main_7qG2_scaled_7qG2_000, __constVal0, __constVal10
+0	6	14	#line 6 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	7	14		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 3
+0	6	17	#line 6 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	3802	17	#line 3802 "NXCDefs.h"
+0	3803	17	#pragma macro 6
+0	3803	17		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	3803	21		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
+0	3803	25		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
+0	3803	27		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5976	29	#line 5976 "NXCDefs.h"
+0	3802	29	#line 3802 "NXCDefs.h"
+0	7	29	#line 7 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	8	29	#line 8 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	9	29		set __D0main, 1
+0	9	32	#line 9 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	32		tst 5, __zfmain, __D0main
+0	9	35	#line 9 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	35		brtst 4, __NXC_Label_607, __zfmain
+0	9	38	#line 9 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	38	#pragma macro 9
+0	10	38		mov __ColorSensorReadArgs.Port, __constVal3
+0	10	40		syscall 34, __ColorSensorReadArgs
+0	10	43		mov __main_7qG2_rawdata_7qG2_000, __ColorSensorReadArgs.RawArray
+0	10	45		mov __main_7qG2_normdata_7qG2_000, __ColorSensorReadArgs.NormalizedArray
+0	10	47		mov __main_7qG2_scaled_7qG2_000, __ColorSensorReadArgs.ScaledArray
+0	10	49		tst 4, __D0main, __ColorSensorReadArgs.Result
+0	5989	52	#line 5989 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	9	52	#line 9 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	9	52	#line 9 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	52	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	52		set __signed_stack_001main, 10
+0	10	55	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	55	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	55		set __signed_stack_002main, 50
+0	10	58	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	58	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	58		set __signed_stack_003main, 0
+0	10	61	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	61	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	61		index __ArrHelper__main_73_0, __main_7qG2_rawdata_7qG2_000, __signed_stack_003main
+0	10	65	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	65		mov __signed_stack_003main, __ArrHelper__main_73_0
+0	10	67	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	10	67	#line 10 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	67		set __D0main, 0
+0	11	70	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	70	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	70		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	11	72	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	72		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	11	74	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	74		mov __TextOutArgs.Options, __D0main
+0	11	76	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	76		numtostr __TextOutArgs.Text, __signed_stack_003main
+0	11	79	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	79		syscall 13, __TextOutArgs
+0	11	82	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	82	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	82	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	82	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	82		set __signed_stack_001main, 10
+0	11	85	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	85	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	85		set __signed_stack_002main, 40
+0	11	88	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	88	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	88		set __signed_stack_003main, 0
+0	11	91	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	91	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	91		index __ArrHelper__main_73_0, __main_7qG2_normdata_7qG2_000, __signed_stack_003main
+0	11	95	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	95		mov __signed_stack_003main, __ArrHelper__main_73_0
+0	11	97	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	11	97	#line 11 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	97		set __D0main, 0
+0	12	100	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	100	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	100		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	12	102	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	102		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	12	104	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	104		mov __TextOutArgs.Options, __D0main
+0	12	106	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	106		numtostr __TextOutArgs.Text, __signed_stack_003main
+0	12	109	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	109		syscall 13, __TextOutArgs
+0	12	112	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	112	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	112	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	112	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	112		set __signed_stack_001main, 10
+0	12	115	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	115	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	115		set __signed_stack_002main, 30
+0	12	118	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	118	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	118		set __signed_stack_003main, 0
+0	12	121	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	121	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	121		index __ArrHelper__main_73_0, __main_7qG2_scaled_7qG2_000, __signed_stack_003main
+0	12	125	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	125		mov __signed_stack_003main, __ArrHelper__main_73_0
+0	12	127	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	12	127	#line 12 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	127		set __D0main, 0
+0	13	130	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	130	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	14	130		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	13	132	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	14	132		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	13	134	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	14	134		mov __TextOutArgs.Options, __D0main
+0	13	136	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	14	136		numtostr __TextOutArgs.Text, __signed_stack_003main
+0	13	139	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	14	139		syscall 13, __TextOutArgs
+0	13	142	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	142	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	142	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	142	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	13	142	#line 13 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	7921	142	#line 7921 "NXCDefs.h"
+0	7922	142		wait 100
+0	7921	144	#line 7921 "NXCDefs.h"
+0	14	144	#line 14 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	6069	144	#line 6069 "NXCDefs.h"
+0	6070	144	#pragma macro 6
+0	6070	144		mov __PointOutArgs.Location.X, __constVal200
+0	6070	146		mov __PointOutArgs.Location.Y, __constVal200
+0	6070	148		mov __PointOutArgs.Options, __constVal1
+0	6070	150		syscall 14, __PointOutArgs
+0	6148	153	#line 6148 "NXCDefs.h"
+0	6069	153	#line 6069 "NXCDefs.h"
+0	16	153	#line 16 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	19	153	#line 19 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	20	153		jmp __NXC_Label_606
+0	19	155	#line 19 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+0	20	155		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	20	0	#line 20 "C:\Projects\nxt\scanner_v3\Untitled1.nxc"
+2	21	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Projects\nxt\scanner_v3\Untitled1.nxc
+1	__ResetSensorSubroutine	158	NXTDefs.h
+2	__initialize_global_data	171	C:\Projects\nxt\scanner_v3\Untitled1.nxc

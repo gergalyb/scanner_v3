@@ -1,19 +1,28 @@
 
 
-int values[];
+int values[6600][3];
 int x=0;
 int y=0;
 int i=0;
+int a;
+int b[10];
+int rawdata[3];
 
 task main()
 {
      SetSensorTouch(IN_1);
      SetSensorTouch(IN_2);
      //SetSensorColorFull(IN_3);
-     SetSensorType(IN_3, SENSOR_TYPE_COLORRED);
+     SetSensorColorFull(IN_3);
      
-     ArrayInit(values,0,6600);
-
+     //ArrayInit(values,0,6600);
+     repeat(6500)
+     {
+                 values[i][0]=90;
+                 values[i][1]=90;
+                 values[i][2]=90;
+     }
+     i=0;
 
 
      OnRev(OUT_B,40);
@@ -22,26 +31,29 @@ task main()
      RotateMotor(OUT_B,100,400);
      //until(Sensor(IN_2)==1);
      OnFwd(OUT_A,40);
-     until(Sensor(IN_3)>250 && Sensor(IN_3)<500);
+     until(Sensor(IN_3)==6);
      Wait(100);
-     until(Sensor(IN_3)<250);
+     until(Sensor(IN_3)==1);
      Wait(100);
-     until(Sensor(IN_3)>250);
+     until(Sensor(IN_3)==6);
      Off(OUT_A);
      RotateMotor(OUT_B,100,-350);
      //RotateMotor(OUT_B,50,50);
      
-     repeat(50)
+     repeat(25)
      {
                 repeat(64)
                 {
                           RotateMotorEx(OUT_B,100,11,0,0,0);
-                          if (Sensor(IN_3)<350)
+                          if (Sensor(IN_3)==1)
                           {
                              PointOut(x,y,0);
                           }
                           y++;
-                          values[i]=Sensor(IN_3);
+                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
+                          values[i][0]=rawdata[0];
+                          values[i][1]=rawdata[1];
+                          values[i][2]=rawdata[2];
                           i++;
                 }
                 Off(OUT_B);
@@ -50,12 +62,15 @@ task main()
                 repeat(64)
                 {
                           RotateMotorEx(OUT_B,100,-11,0,0,0);
-                          if (Sensor(IN_3)<350)
+                          if (Sensor(IN_3)==1)
                           {
                              PointOut(x,y,0);
                           }
                           y--;
-                          values[i]=Sensor(IN_3);
+                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
+                          values[i][0]=rawdata[0];
+                          values[i][1]=rawdata[1];
+                          values[i][2]=rawdata[2];
                           i++;
                 }
                 Off(OUT_B);
@@ -99,40 +114,20 @@ task main()
      {
                repeat(64)
                {
-                 if (values[i]<350)
-                 {
-                    points[0]=0;
-                    points[1]=0;
-                    points[2]=0;
+                    points[0]=values[i][2]-80;
+                    points[1]=values[i][1]-80;
+                    points[2]=values[i][0]-80;
                     WriteBytes(filehandle,points,con);
-                 }
-                 else
-                 {
-                     points[0]=255;
-                     points[1]=255;
-                     points[2]=255;
-                     WriteBytes(filehandle,points,con);
-                 }
-                 i--;
+                    i--;
                }
                i-=64;
                repeat(64)
                {
-                 if (values[i]<350)
-                 {
-                    points[0]=0;
-                    points[1]=0;
-                    points[2]=0;
+                    points[0]=values[i][0]-80;
+                    points[1]=values[i][1]-80;
+                    points[2]=values[i][2]-80;
                     WriteBytes(filehandle,points,con);
-                 }
-                 else
-                 {
-                     points[0]=255;
-                     points[1]=255;
-                     points[2]=255;
-                     WriteBytes(filehandle,points,con);
-                 }
-                 i++;
+                    i++;
                }
                i-=64;
      }

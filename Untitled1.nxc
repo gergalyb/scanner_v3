@@ -1,0 +1,18 @@
+task main()
+{
+     int rawdata[10];
+     int normdata[10];
+     int scaled[10];
+     int a;
+     SetSensorColorFull(IN_4);
+     while(1)
+     {
+             ReadSensorColorEx(IN_4, a, rawdata, normdata, scaled);
+             NumOut(10,50,rawdata[0],0);
+             NumOut(10,40,normdata[0],0);
+             NumOut(10,30,scaled[0],0);
+             Wait(100);
+             ClearScreen();
+
+     }
+}
