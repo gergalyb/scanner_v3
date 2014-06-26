@@ -1,0 +1,135 @@
+
+
+int values[6600][3];
+int x=0;
+int y=0;
+int i=0;
+int a;
+int b[10];
+int rawdata[3];
+
+task main()
+{
+     SetSensorTouch(IN_1);
+     SetSensorTouch(IN_2);
+     //SetSensorColorFull(IN_3);
+     SetSensorColorFull(IN_3);
+     
+     //ArrayInit(values,0,6600);
+     repeat(6500)
+     {
+                 values[i][0]=0;
+                 values[i][1]=0;
+                 values[i][2]=0;
+     }
+     i=0;
+
+
+     OnRev(OUT_B,40);
+     until(Sensor(IN_1)==1);
+     Off(OUT_B);
+     RotateMotor(OUT_B,100,400);
+     //until(Sensor(IN_2)==1);
+     OnFwd(OUT_A,40);
+     until(Sensor(IN_3)==6);
+     Wait(100);
+     until(Sensor(IN_3)==1);
+     Wait(100);
+     until(Sensor(IN_3)==6);
+     Off(OUT_A);
+     RotateMotor(OUT_B,100,-350);
+     //RotateMotor(OUT_B,50,50);
+     
+     repeat(25)
+     {
+                repeat(64)
+                {
+                          RotateMotorEx(OUT_B,100,11,0,0,0);
+                          if (Sensor(IN_3)==1)
+                          {
+                             PointOut(x,y,0);
+                          }
+                          y++;
+                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
+                          values[i][0]=rawdata[0];
+                          values[i][1]=rawdata[1];
+                          values[i][2]=rawdata[2];
+                          i++;
+                }
+                Off(OUT_B);
+                RotateMotor(OUT_A,60,7);
+                x++;
+                repeat(64)
+                {
+                          RotateMotorEx(OUT_B,100,-11,0,0,0);
+                          if (Sensor(IN_3)==1)
+                          {
+                             PointOut(x,y,0);
+                          }
+                          y--;
+                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
+                          values[i][0]=rawdata[0];
+                          values[i][1]=rawdata[1];
+                          values[i][2]=rawdata[2];
+                          i++;
+                }
+                Off(OUT_B);
+                RotateMotor(OUT_A,60,7);
+                x++;
+     }
+     
+     byte fileheader[];
+     byte infoheader[];
+     byte points[];
+     int filehandle;
+     byte con;
+
+     ArrayInit(fileheader,0,14);
+     ArrayInit(infoheader,0,40);
+     ArrayInit(points,0,3);
+
+     DeleteFile("image.bmp");
+     CreateFile("image.bmp",19254,filehandle);
+
+     fileheader[0]=66;
+     fileheader[1]=77;
+     fileheader[2]=54;
+     fileheader[3]=75;
+     fileheader[4]=0;
+     fileheader[5]=0;
+     fileheader[9]=54;
+     WriteBytes(filehandle,fileheader,con);
+
+     infoheader[0]=40;
+     infoheader[4]=64;
+     infoheader[8]=100;
+     infoheader[12]=1;
+     infoheader[14]=24;
+     infoheader[19]=0;
+     infoheader[23]=0;
+     WriteBytes(filehandle,infoheader,con);
+
+     i=6400;
+     repeat(50)
+     {
+               repeat(64)
+               {
+                    points[0]=values[i][2]-80;
+                    points[1]=values[i][1]-80;
+                    points[2]=values[i][0]-80;
+                    WriteBytes(filehandle,points,con);
+                    i--;
+               }
+               i-=64;
+               repeat(64)
+               {
+                    points[0]=values[i][0]-80;
+                    points[1]=values[i][1]-80;
+                    points[2]=values[i][2]-80;
+                    WriteBytes(filehandle,points,con);
+                    i++;
+               }
+               i-=64;
+     }
+     CloseFile(filehandle);
+}
