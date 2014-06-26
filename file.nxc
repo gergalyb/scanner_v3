@@ -1,0 +1,47 @@
+task main()
+{
+     byte fileheader[];
+     byte infoheader[];
+     byte points[];
+     int filehandle;
+     byte con;
+
+     ArrayInit(values,0,6400);
+     ArrayInit(fileheader,0,14);
+     ArrayInit(infoheader,0,40);
+     ArrayInit(points,0,3);
+
+     DeleteFile("image.bmp");
+     CreateFile("image.bmp",19254,filehandle);
+     
+     fileheader[0]=66;
+     fileheader[1]=77;
+     fileheader[2]=54;
+     fileheader[3]=75;
+     fileheader[4]=0;
+     fileheader[5]=0;
+     fileheader[9]=54;
+     WriteBytes(filehandle,fileheader,con);
+     
+     infoheader[0]=40;
+     infoheader[4]=64;
+     infoheader[8]=100;
+     infoheader[12]=1;
+     infoheader[14]=24;
+     infoheader[19]=0;
+     infoheader[23]=0;
+     WriteBytes(filehandle,infoheader,con);
+     
+     repeat(3200)
+     {
+                 points[0]=0;
+                 points[1]=0;
+                 points[2]=0;
+                 WriteBytes(filehandle,points,con);
+                 points[0]=255;
+                 points[1]=255;
+                 points[2]=255;
+                 WriteBytes(filehandle,points,con);
+     }
+     CloseFile(filehandle);
+}
