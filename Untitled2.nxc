@@ -1,67 +1,47 @@
 
 
-byte values[6400][3];
+int values[];
 int x=0;
 int y=0;
 int i=0;
-int a;
-int b[10];
-int rawdata[3];
-byte temp=0;
-byte s=0;
-byte e=0;
 
 task main()
 {
      SetSensorTouch(IN_1);
      SetSensorTouch(IN_2);
      //SetSensorColorFull(IN_3);
-     SetSensorColorFull(IN_3);
-     i=0;
-     ArrayInit(values,0,6400);
-     repeat(3000)
-     {
-                 values[i][0]=1;
-                 values[i][1]=0;
-                 values[i][2]=0;
-                 i++;
-                 //NumOut(10,10,FreeMemory(),1);
-                 //Wait(1);
-     }
-     i=0;
+     SetSensorType(IN_3, SENSOR_TYPE_COLORRED);
 
-     PlayTone(600, 1000);
-     Wait(1000);
-     
-    /* OnRev(OUT_B,40);
+     ArrayInit(values,0,6600);
+
+
+
+     OnRev(OUT_B,40);
      until(Sensor(IN_1)==1);
      Off(OUT_B);
      RotateMotor(OUT_B,100,400);
      //until(Sensor(IN_2)==1);
      OnFwd(OUT_A,40);
-     until(Sensor(IN_3)==6);
+     until(Sensor(IN_3)>250 && Sensor(IN_3)<500);
      Wait(100);
-     until(Sensor(IN_3)==1);
+     until(Sensor(IN_3)<250);
      Wait(100);
-     until(Sensor(IN_3)==6);
+     until(Sensor(IN_3)>250);
      Off(OUT_A);
      RotateMotor(OUT_B,100,-350);
      //RotateMotor(OUT_B,50,50);
-      */
-     /*repeat(25)
+
+     repeat(50)
      {
                 repeat(64)
                 {
                           RotateMotorEx(OUT_B,100,11,0,0,0);
-                          if (Sensor(IN_3)==1)
+                          if (Sensor(IN_3)<350)
                           {
                              PointOut(x,y,0);
                           }
                           y++;
-                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
-                          values[i][0]=rawdata[0];
-                          values[i][1]=rawdata[1];
-                          values[i][2]=rawdata[2];
+                          values[i]=Sensor(IN_3);
                           i++;
                 }
                 Off(OUT_B);
@@ -70,22 +50,19 @@ task main()
                 repeat(64)
                 {
                           RotateMotorEx(OUT_B,100,-11,0,0,0);
-                          if (Sensor(IN_3)==1)
+                          if (Sensor(IN_3)<350)
                           {
                              PointOut(x,y,0);
                           }
                           y--;
-                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
-                          values[i][0]=rawdata[0];
-                          values[i][1]=rawdata[1];
-                          values[i][2]=rawdata[2];
+                          values[i]=Sensor(IN_3);
                           i++;
                 }
                 Off(OUT_B);
                 RotateMotor(OUT_A,60,7);
                 x++;
-     } */
-     
+     }
+
      byte fileheader[];
      byte infoheader[];
      byte points[];
@@ -117,23 +94,47 @@ task main()
      infoheader[23]=0;
      WriteBytes(filehandle,infoheader,con);
 
-     PlayTone(440, 1000);
-     Wait(1000);
-
-     i=64;
+     i=6400;
      repeat(50)
      {
-               repeat(32)
+               repeat(64)
                {
-                         s=i;
-                         e=s+63;
-                         temp=values[e][0];
-                         values[e][0]=values[s][0];
-                         values[s][0]=temp;
-                         s++;
-                         e--;
+                 if (values[i]<350)
+                 {
+                    points[0]=0;
+                    points[1]=0;
+                    points[2]=0;
+                    WriteBytes(filehandle,points,con);
+                 }
+                 else
+                 {
+                     points[0]=255;
+                     points[1]=255;
+                     points[2]=255;
+                     WriteBytes(filehandle,points,con);
+                 }
+                 i--;
                }
-               i+=128;
+               i-=64;
+               repeat(64)
+               {
+                 if (values[i]<350)
+                 {
+                    points[0]=0;
+                    points[1]=0;
+                    points[2]=0;
+                    WriteBytes(filehandle,points,con);
+                 }
+                 else
+                 {
+                     points[0]=255;
+                     points[1]=255;
+                     points[2]=255;
+                     WriteBytes(filehandle,points,con);
+                 }
+                 i++;
+               }
+               i-=64;
      }
      CloseFile(filehandle);
 }

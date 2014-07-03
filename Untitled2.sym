@@ -1,0 +1,1045 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_004main	6	1	0	4	8
+1	__rotate_angle1	6	1	4	4	7
+2	__signed_stack_005main	6	1	8	4	4
+3	__signed_stack_006main	6	1	12	4	4
+4	__rotate_theAngle0	5	1	16	4	2
+5	__signed_stack_003main	6	1	20	4	48
+6	__FOMutex	9	0	24	4	2
+7	__rotate_theAngle1	5	1	28	4	2
+8	__D0main	6	1	32	4	119
+9	__signed_stack_002main	6	1	36	4	22
+10	__signed_stack_001main	6	1	40	4	50
+11	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	44	4	2
+12	__rotate_angle0	6	1	48	4	5
+13	__constVal19254	4	0	52	2	1
+14	__main_7qG2_filehandle_7qG2_000	4	1	54	2	8
+15	__constVal6600	4	0	56	2	1
+16	__rotate_RotCount1	4	1	58	2	4
+17	__ArrHelper__main_73_0	4	1	60	2	4
+18	y	4	1	62	2	6
+19	i	4	1	64	2	17
+20	__rotate_OldRotCount1	4	1	66	2	2
+21	__rotate_RotCount0	4	1	68	2	4
+22	__rotate_OldRotCount0	4	1	70	2	2
+23	x	4	1	72	2	6
+24	__constVal2	2	0	74	1	8
+25	____ResetSensorSubroutine_return	1	1	75	1	4
+26	__ResetSensorTmp	1	1	76	1	2
+27	__constVal0	2	1	77	1	51
+28	__constVal1	2	0	78	1	33
+29	____RotateMotor1_return	1	1	79	1	6
+30	__ResetSensorPort	1	1	80	1	4
+31	__constVal3	2	0	81	1	7
+32	__SetSensorType_7qG2_type_7qG2_000_inline_main	1	1	82	1	2
+33	__constVal96	2	0	83	1	12
+34	__SetSensorType_7qG2_port_7qG2_000_inline_main	1	1	84	1	2
+35	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	85	1	8
+36	____initialize_global_data_return	1	1	86	1	3
+37	__constVal63	2	0	87	1	6
+38	__constVal14	2	0	88	1	1
+39	__constVal40	2	0	89	1	2
+40	__constVal64	2	0	90	1	2
+41	__main_7qG2_con_7qG2_000	1	1	91	1	6
+42	__zfmain	1	1	92	1	34
+43	__rotate_theRVD0	1	1	93	1	3
+44	__rotate_rs0	1	1	94	1	2
+45	__rotate_theRVP0	1	1	95	1	3
+46	__rotate_theRVI0	1	1	96	1	3
+47	__rotate_thePower0	2	1	97	1	4
+48	__rotate_firstPort1	1	1	98	1	5
+49	__rotate_sync1	1	1	99	1	5
+50	__rotate_theTurnPct0	2	1	100	1	4
+51	__rotate_power1	1	1	101	1	7
+52	__rotate_theRS0	1	1	102	1	3
+53	__rotate_firstPort0	1	1	103	1	5
+54	__rotate_sync0	1	1	104	1	3
+55	__OnRev_Tmp	2	1	105	1	2
+56	__rotate_power0	1	1	106	1	5
+57	__rotate_stop0	1	1	107	1	3
+58	__rotate_theOM0	1	1	108	1	7
+59	__rotate_theRM0	1	1	109	1	4
+60	__rotate_turnpct0	2	1	110	1	4
+61	__rotate_theUF0	1	1	111	1	6
+62	__rotate_theRVI1	1	1	112	1	5
+63	__rotate_theRVD1	1	1	113	1	5
+64	__rotate_theRS1	1	1	114	1	3
+65	__rotate_theRVP1	1	1	115	1	5
+66	__rotate_rs1	1	1	116	1	2
+67	____RotateMotor0_return	1	1	117	1	4
+68	__constVal32	2	0	118	1	32
+69	__rotate_thePower1	2	1	119	1	4
+70	__rotate_theTurnPct1	2	1	120	1	4
+71	__rotate_theOM1	1	1	121	1	7
+72	__rotate_theRM1	1	1	122	1	4
+73	__rotate_theUF1	1	1	123	1	6
+74	__rotate_stop1	1	1	124	1	5
+75	__rotate_turnpct1	2	1	125	1	6
+76	__FDArgs	8	0	2	8	3
+77	__FDArgs.Result	3	1	128	2	3
+78	__FDArgs.Filename	7	0	130	4	3
+79	__FDArgs.Filename.Filename_type	1	0	0	1	0
+80	__FOArgs	8	0	4	12	5
+81	__FOArgs.Result	3	1	132	2	5
+82	__FOArgs.FileHandle	1	1	134	1	5
+83	__FOArgs.Filename	7	0	136	4	5
+84	__FOArgs.Filename.Filename_type	1	0	0	1	0
+85	__FOArgs.Length	5	1	140	4	5
+86	__FWriteArgs	8	0	4	12	42
+87	__FWriteArgs.Result	3	1	144	2	42
+88	__FWriteArgs.FileHandle	1	1	146	1	42
+89	__FWriteArgs.Buffer	7	0	148	4	42
+90	__FWriteArgs.Buffer.Buffer_type	1	0	0	1	0
+91	__FWriteArgs.Length	5	1	152	4	42
+92	__FCArgs	8	0	2	4	3
+93	__FCArgs.Result	3	1	156	2	3
+94	__FCArgs.FileHandle	1	1	158	1	3
+95	__PointOutArgs	8	0	3	12	10
+96	__PointOutArgs.Result	2	1	160	1	10
+97	__PointOutArgs.Location	8	0	2	4	10
+98	__PointOutArgs.Location.X	4	1	164	2	10
+99	__PointOutArgs.Location.Y	4	1	166	2	10
+100	__PointOutArgs.Options	5	1	168	4	10
+101	__rotate_ports0	7	0	172	4	7
+102	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
+103	__constStr0009	7	0	174	4	2
+104	__constStr0009.__constStr0009_type	1	1	0	1	0
+105	__rotate_ports1	7	0	176	4	9
+106	__rotate_ports1.__rotate_ports1_type	1	0	0	1	0
+107	__main_7qG2_fileheader_7qG2_000	7	0	178	4	16
+108	__main_7qG2_fileheader_7qG2_000.__main_7qG2_fileheader_7qG2_000_type	1	0	0	1	0
+109	values	7	0	180	4	7
+110	values.values_type	4	0	0	2	0
+111	__main_7qG2_points_7qG2_000	7	0	182	4	29
+112	__main_7qG2_points_7qG2_000.__main_7qG2_points_7qG2_000_type	1	0	0	1	0
+113	__main_7qG2_infoheader_7qG2_000	7	0	184	4	16
+114	__main_7qG2_infoheader_7qG2_000.__main_7qG2_infoheader_7qG2_000_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	9	0	#line 9 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	10	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	9	2	#line 9 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	9	2	#line 9 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	10	2		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	9	5	#line 9 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	3718	5	#line 3718 "NXCDefs.h"
+0	3719	5	#pragma macro 6
+0	3719	5		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	3719	9		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	3719	13		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	3719	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5970	17	#line 5970 "NXCDefs.h"
+0	3718	17	#line 3718 "NXCDefs.h"
+0	10	17	#line 10 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	10	17	#line 10 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	11	17		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	10	20	#line 10 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	3718	20	#line 3718 "NXCDefs.h"
+0	3719	20	#pragma macro 6
+0	3719	20		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	3719	24		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	3719	28		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	3719	30		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5980	32	#line 5980 "NXCDefs.h"
+0	3718	32	#line 3718 "NXCDefs.h"
+0	12	32	#line 12 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	12	32	#line 12 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	13	32		set __SetSensorType_7qG2_port_7qG2_000_inline_main, 2
+0	12	35	#line 12 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	12	35	#line 12 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	13	35		set __SetSensorType_7qG2_type_7qG2_000_inline_main, 14
+0	12	38	#line 12 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	3663	38	#line 3663 "NXCDefs.h"
+0	3664	38		setin __SetSensorType_7qG2_type_7qG2_000_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_main, 0
+0	3663	42	#line 3663 "NXCDefs.h"
+0	14	42	#line 14 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	14	42	#line 14 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	15	42		arrinit values, __constVal0, __constVal6600
+0	14	46	#line 14 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	14	46	#line 14 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	18	46	#line 18 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	19	46	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	20	46	#pragma macro 10
+0	20	46		neg __OnRev_Tmp, __constVal40
+0	20	49		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6016	72	#line 6016 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	19	72	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	19	72	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	20	72		getin __signed_stack_001main, __constVal0, 4
+0	19	76	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	19	76	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	20	76		set __D0main, 1
+0	19	79	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	20	79		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	19	83	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	19	83	#line 19 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	20	83		not __D0main, __zfmain
+0	20	86	#line 20 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	21	86		tst 5, __zfmain, __D0main
+0	20	89	#line 20 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	21	89		brtst 4, __NXC_Label_615, __zfmain
+0	20	92	#line 20 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	20	92	#line 20 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	21	92		jmp __NXC_Label_614
+0	20	94	#line 20 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	21	94	#line 21 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	22	94	#pragma macro 7
+0	22	94		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6045	117	#line 6045 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	21	117	#line 21 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	21	117	#line 21 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	22	117		set __signed_stack_001main, 100
+0	21	120	#line 21 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	21	120	#line 21 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	22	120		set __D0main, 400
+0	23	123	#line 23 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	24	123	#pragma macro 33
+0	24	123		arrbuild __rotate_ports1, __constVal1
+0	24	127		mov __rotate_power1, __signed_stack_001main
+0	24	129		mov __rotate_angle1, __D0main
+0	24	131		mov __rotate_turnpct1, __constVal0
+0	24	133		mov __rotate_sync1, __constVal0
+0	24	135		mov __rotate_stop1, __constVal1
+0	24	137		mov __rotate_theRVP1, __constVal32
+0	24	139		mov __rotate_theRVI1, __constVal0
+0	24	141		mov __rotate_theRVD1, __constVal96
+0	24	143		subcall __RotateMotor1, ____RotateMotor1_return
+0	6058	145	#line 6058 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	23	145	#line 23 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	23	145	#line 23 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	24	145		set __D0main, 40
+0	24	148	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	148	#pragma macro 7
+0	25	148		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6065	171	#line 6065 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	24	171	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	24	171	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	171		getin __signed_stack_001main, __constVal2, 4
+0	24	175	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	24	175	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	175		set __D0main, 250
+0	24	178	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	178		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	24	182	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	182		mov __D0main, __zfmain
+0	24	184	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	184		brtst 4, __NXC_Label_631, __zfmain
+0	24	187	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	187		mov __signed_stack_001main, __D0main
+0	24	189	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	189		getin __signed_stack_002main, __constVal2, 4
+0	24	193	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	24	193	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	193		set __D0main, 500
+0	24	196	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	196		cmp 0, __zfmain, __signed_stack_002main, __D0main
+0	24	200	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	24	200	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	200		and __D0main, __signed_stack_001main, __zfmain
+0	24	204	#line 24 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	204		not __D0main, __D0main
+0	25	207	#line 25 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	26	207		tst 5, __zfmain, __D0main
+0	25	210	#line 25 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	26	210		brtst 4, __NXC_Label_627, __zfmain
+0	25	213	#line 25 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	213	#line 25 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	26	213		jmp __NXC_Label_626
+0	25	215	#line 25 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	25	215	#line 25 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	26	215		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	25	218	#line 25 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	7921	218	#line 7921 "NXCDefs.h"
+0	7922	218		wait 100
+0	7921	220	#line 7921 "NXCDefs.h"
+0	26	220	#line 26 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	26	220	#line 26 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	27	220		getin __signed_stack_001main, __constVal2, 4
+0	26	224	#line 26 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	26	224	#line 26 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	27	224		set __D0main, 250
+0	26	227	#line 26 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	27	227		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	26	231	#line 26 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	26	231	#line 26 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	27	231		not __D0main, __zfmain
+0	27	234	#line 27 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	28	234		tst 5, __zfmain, __D0main
+0	27	237	#line 27 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	28	237		brtst 4, __NXC_Label_635, __zfmain
+0	27	240	#line 27 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	27	240	#line 27 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	28	240		jmp __NXC_Label_634
+0	27	242	#line 27 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	27	242	#line 27 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	28	242		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	27	245	#line 27 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	7921	245	#line 7921 "NXCDefs.h"
+0	7922	245		wait 100
+0	7921	247	#line 7921 "NXCDefs.h"
+0	28	247	#line 28 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	28	247	#line 28 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	29	247		getin __signed_stack_001main, __constVal2, 4
+0	28	251	#line 28 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	28	251	#line 28 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	29	251		set __D0main, 250
+0	28	254	#line 28 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	29	254		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	28	258	#line 28 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	28	258	#line 28 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	29	258		not __D0main, __zfmain
+0	29	261	#line 29 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	30	261		tst 5, __zfmain, __D0main
+0	29	264	#line 29 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	30	264		brtst 4, __NXC_Label_643, __zfmain
+0	29	267	#line 29 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	29	267	#line 29 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	30	267		jmp __NXC_Label_642
+0	29	269	#line 29 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	30	269	#line 30 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	31	269	#pragma macro 7
+0	31	269		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6186	292	#line 6186 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	30	292	#line 30 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	30	292	#line 30 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	31	292		set __signed_stack_001main, 100
+0	30	295	#line 30 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	30	295	#line 30 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	31	295		set __D0main, -350
+0	33	298	#line 33 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	34	298	#pragma macro 33
+0	34	298		arrbuild __rotate_ports1, __constVal1
+0	34	302		mov __rotate_power1, __signed_stack_001main
+0	34	304		mov __rotate_angle1, __D0main
+0	34	306		mov __rotate_turnpct1, __constVal0
+0	34	308		mov __rotate_sync1, __constVal0
+0	34	310		mov __rotate_stop1, __constVal1
+0	34	312		mov __rotate_theRVP1, __constVal32
+0	34	314		mov __rotate_theRVI1, __constVal0
+0	34	316		mov __rotate_theRVD1, __constVal96
+0	34	318		subcall __RotateMotor1, ____RotateMotor1_return
+0	6199	320	#line 6199 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	33	320	#line 33 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	34	320	#line 34 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	35	320		set __signed_stack_001main, 50
+0	35	323	#line 35 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	35	323	#line 35 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	36	323		sub __signed_stack_001main, __signed_stack_001main, __constVal1
+0	35	327	#line 35 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	36	327		brtst 0, __NXC_Label_653, __signed_stack_001main
+0	36	330	#line 36 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	37	330		set __signed_stack_002main, 64
+0	37	333	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	37	333	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	333		sub __signed_stack_002main, __signed_stack_002main, __constVal1
+0	37	337	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	337		brtst 0, __NXC_Label_657, __signed_stack_002main
+0	37	340	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	340		set __signed_stack_003main, 100
+0	37	343	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	37	343	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	343		set __signed_stack_004main, 11
+0	37	346	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	37	346	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	346		set __signed_stack_005main, 0
+0	37	349	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	37	349	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	349		set __signed_stack_006main, 0
+0	37	352	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	37	352	#line 37 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	352		set __D0main, 0
+0	38	355	#line 38 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	39	355	#pragma macro 33
+0	39	355		arrbuild __rotate_ports1, __constVal1
+0	39	359		mov __rotate_power1, __signed_stack_003main
+0	39	361		mov __rotate_angle1, __signed_stack_004main
+0	39	363		mov __rotate_turnpct1, __signed_stack_005main
+0	39	365		mov __rotate_sync1, __signed_stack_006main
+0	39	367		mov __rotate_stop1, __D0main
+0	39	369		mov __rotate_theRVP1, __constVal32
+0	39	371		mov __rotate_theRVI1, __constVal0
+0	39	373		mov __rotate_theRVD1, __constVal96
+0	39	375		subcall __RotateMotor1, ____RotateMotor1_return
+0	6252	377	#line 6252 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	377	#line 38 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	38	377	#line 38 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	39	377		getin __signed_stack_003main, __constVal2, 4
+0	38	381	#line 38 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	39	381	#line 39 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	40	381		set __D0main, 350
+0	39	384	#line 39 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	40	384		cmp 0, __zfmain, __signed_stack_003main, __D0main
+0	39	388	#line 39 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	40	388		mov __D0main, __zfmain
+0	40	390	#line 40 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	41	390		brtst 4, __NXC_Label_672, __zfmain
+0	40	393	#line 40 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	41	393		mov __signed_stack_003main, x
+0	40	395	#line 40 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	40	395	#line 40 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	41	395		mov __signed_stack_004main, y
+0	40	397	#line 40 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	40	397	#line 40 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	41	397		set __D0main, 0
+0	41	400	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	41	400	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	42	400		mov __PointOutArgs.Location.X, __signed_stack_003main
+0	41	402	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	42	402		mov __PointOutArgs.Location.Y, __signed_stack_004main
+0	41	404	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	42	404		mov __PointOutArgs.Options, __D0main
+0	41	406	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	42	406		syscall 14, __PointOutArgs
+0	41	409	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	42	409		mov __D0main, __PointOutArgs.Result
+0	41	411	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	41	411	#line 41 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	42	411	#line 42 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	43	411	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	44	411		add y, y, __constVal1
+0	43	415	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	43	415	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	44	415		mov __signed_stack_003main, i
+0	43	417	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	43	417	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	44	417		getin __D0main, __constVal2, 4
+0	43	421	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	44	421		replace values, values, __signed_stack_003main, __D0main
+0	43	426	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	43	426	#line 43 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	45	426	#line 45 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	46	426		add i, i, __constVal1
+0	45	430	#line 45 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	46	430	#line 46 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	47	430		jmp __NXC_Label_656
+0	46	432	#line 46 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	47	432	#line 47 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	48	432	#pragma macro 7
+0	48	432		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6326	455	#line 6326 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	47	455	#line 47 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	47	455	#line 47 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	48	455		set __signed_stack_002main, 60
+0	47	458	#line 47 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	47	458	#line 47 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	48	458		set __D0main, 7
+0	48	461	#line 48 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	49	461	#pragma macro 33
+0	49	461		arrbuild __rotate_ports0, __constVal0
+0	49	465		mov __rotate_power0, __signed_stack_002main
+0	49	467		mov __rotate_angle0, __D0main
+0	49	469		mov __rotate_turnpct0, __constVal0
+0	49	471		mov __rotate_sync0, __constVal0
+0	49	473		mov __rotate_stop0, __constVal1
+0	49	475		mov __rotate_theRVP0, __constVal32
+0	49	477		mov __rotate_theRVI0, __constVal0
+0	49	479		mov __rotate_theRVD0, __constVal96
+0	49	481		subcall __RotateMotor0, ____RotateMotor0_return
+0	6339	483	#line 6339 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	48	483	#line 48 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	49	483	#line 49 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	50	483		add x, x, __constVal1
+0	49	487	#line 49 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	50	487	#line 50 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	51	487		set __signed_stack_002main, 64
+0	51	490	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	51	490	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	490		sub __signed_stack_002main, __signed_stack_002main, __constVal1
+0	51	494	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	494		brtst 0, __NXC_Label_688, __signed_stack_002main
+0	51	497	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	497		set __signed_stack_003main, 100
+0	51	500	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	51	500	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	500		set __signed_stack_004main, -11
+0	51	503	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	51	503	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	503		set __signed_stack_005main, 0
+0	51	506	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	51	506	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	506		set __signed_stack_006main, 0
+0	51	509	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	51	509	#line 51 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	509		set __D0main, 0
+0	52	512	#line 52 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	53	512	#pragma macro 33
+0	53	512		arrbuild __rotate_ports1, __constVal1
+0	53	516		mov __rotate_power1, __signed_stack_003main
+0	53	518		mov __rotate_angle1, __signed_stack_004main
+0	53	520		mov __rotate_turnpct1, __signed_stack_005main
+0	53	522		mov __rotate_sync1, __signed_stack_006main
+0	53	524		mov __rotate_stop1, __D0main
+0	53	526		mov __rotate_theRVP1, __constVal32
+0	53	528		mov __rotate_theRVI1, __constVal0
+0	53	530		mov __rotate_theRVD1, __constVal96
+0	53	532		subcall __RotateMotor1, ____RotateMotor1_return
+0	6384	534	#line 6384 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	534	#line 52 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	52	534	#line 52 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	53	534		getin __signed_stack_003main, __constVal2, 4
+0	52	538	#line 52 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	53	538	#line 53 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	54	538		set __D0main, 350
+0	53	541	#line 53 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	54	541		cmp 0, __zfmain, __signed_stack_003main, __D0main
+0	53	545	#line 53 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	54	545		mov __D0main, __zfmain
+0	54	547	#line 54 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	55	547		brtst 4, __NXC_Label_703, __zfmain
+0	54	550	#line 54 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	55	550		mov __signed_stack_003main, x
+0	54	552	#line 54 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	54	552	#line 54 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	55	552		mov __signed_stack_004main, y
+0	54	554	#line 54 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	54	554	#line 54 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	55	554		set __D0main, 0
+0	55	557	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	55	557	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	56	557		mov __PointOutArgs.Location.X, __signed_stack_003main
+0	55	559	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	56	559		mov __PointOutArgs.Location.Y, __signed_stack_004main
+0	55	561	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	56	561		mov __PointOutArgs.Options, __D0main
+0	55	563	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	56	563		syscall 14, __PointOutArgs
+0	55	566	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	56	566		mov __D0main, __PointOutArgs.Result
+0	55	568	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	55	568	#line 55 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	56	568	#line 56 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	57	568	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	58	568		sub y, y, __constVal1
+0	57	572	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	57	572	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	58	572		mov __signed_stack_003main, i
+0	57	574	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	57	574	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	58	574		getin __D0main, __constVal2, 4
+0	57	578	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	58	578		replace values, values, __signed_stack_003main, __D0main
+0	57	583	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	57	583	#line 57 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	59	583	#line 59 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	60	583		add i, i, __constVal1
+0	59	587	#line 59 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	60	587	#line 60 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	61	587		jmp __NXC_Label_687
+0	60	589	#line 60 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	61	589	#line 61 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	62	589	#pragma macro 7
+0	62	589		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6458	612	#line 6458 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	61	612	#line 61 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	61	612	#line 61 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	62	612		set __signed_stack_002main, 60
+0	61	615	#line 61 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	61	615	#line 61 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	62	615		set __D0main, 7
+0	62	618	#line 62 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	63	618	#pragma macro 33
+0	63	618		arrbuild __rotate_ports0, __constVal0
+0	63	622		mov __rotate_power0, __signed_stack_002main
+0	63	624		mov __rotate_angle0, __D0main
+0	63	626		mov __rotate_turnpct0, __constVal0
+0	63	628		mov __rotate_sync0, __constVal0
+0	63	630		mov __rotate_stop0, __constVal1
+0	63	632		mov __rotate_theRVP0, __constVal32
+0	63	634		mov __rotate_theRVI0, __constVal0
+0	63	636		mov __rotate_theRVD0, __constVal96
+0	63	638		subcall __RotateMotor0, ____RotateMotor0_return
+0	6471	640	#line 6471 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	62	640	#line 62 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	63	640	#line 63 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	64	640		add x, x, __constVal1
+0	63	644	#line 63 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	65	644	#line 65 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	66	644		jmp __NXC_Label_652
+0	65	646	#line 65 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	71	646	#line 71 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	72	646		arrinit __main_7qG2_fileheader_7qG2_000, __constVal0, __constVal14
+0	71	650	#line 71 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	71	650	#line 71 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	72	650	#line 72 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	73	650		arrinit __main_7qG2_infoheader_7qG2_000, __constVal0, __constVal40
+0	72	654	#line 72 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	72	654	#line 72 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	73	654	#line 73 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	74	654		arrinit __main_7qG2_points_7qG2_000, __constVal0, __constVal3
+0	73	658	#line 73 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	73	658	#line 73 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	75	658	#line 75 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	76	658	#pragma macro 5
+0	76	658		mov __FDArgs.Filename, __constStr0009
+0	76	660		syscall 8, __FDArgs
+0	76	663		mov __D0main, __FDArgs.Result
+0	6513	665	#line 6513 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	75	665	#line 75 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	75	665	#line 75 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	76	665	#line 76 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	77	665	#pragma macro 7
+0	77	665		acquire __FOMutex
+0	77	666		mov __FOArgs.Filename, __constStr0009
+0	77	668		mov __FOArgs.Length, __constVal19254
+0	77	670		syscall 1, __FOArgs
+0	77	673		mov __main_7qG2_filehandle_7qG2_000, __FOArgs.FileHandle
+0	77	675		mov __D0main, __FOArgs.Result
+0	77	677		release __FOMutex
+0	6517	678	#line 6517 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	76	678	#line 76 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	76	678	#line 76 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	78	678	#line 78 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	79	678		set __signed_stack_001main, 0
+0	78	681	#line 78 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	79	681	#line 79 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	80	681		set __D0main, 66
+0	79	684	#line 79 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	80	684		replace __main_7qG2_fileheader_7qG2_000, __main_7qG2_fileheader_7qG2_000, __signed_stack_001main, __D0main
+0	79	689	#line 79 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	79	689	#line 79 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	80	689		set __signed_stack_001main, 1
+0	79	692	#line 79 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	80	692	#line 80 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	81	692		set __D0main, 77
+0	80	695	#line 80 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	81	695		replace __main_7qG2_fileheader_7qG2_000, __main_7qG2_fileheader_7qG2_000, __signed_stack_001main, __D0main
+0	80	700	#line 80 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	80	700	#line 80 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	81	700		set __signed_stack_001main, 2
+0	80	703	#line 80 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	81	703	#line 81 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	82	703		set __D0main, 54
+0	81	706	#line 81 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	82	706		replace __main_7qG2_fileheader_7qG2_000, __main_7qG2_fileheader_7qG2_000, __signed_stack_001main, __D0main
+0	81	711	#line 81 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	81	711	#line 81 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	82	711		set __signed_stack_001main, 3
+0	81	714	#line 81 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	82	714	#line 82 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	83	714		set __D0main, 75
+0	82	717	#line 82 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	83	717		replace __main_7qG2_fileheader_7qG2_000, __main_7qG2_fileheader_7qG2_000, __signed_stack_001main, __D0main
+0	82	722	#line 82 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	82	722	#line 82 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	83	722		set __signed_stack_001main, 4
+0	82	725	#line 82 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	83	725	#line 83 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	84	725		set __D0main, 0
+0	83	728	#line 83 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	84	728		replace __main_7qG2_fileheader_7qG2_000, __main_7qG2_fileheader_7qG2_000, __signed_stack_001main, __D0main
+0	83	733	#line 83 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	83	733	#line 83 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	84	733		set __signed_stack_001main, 5
+0	83	736	#line 83 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	84	736	#line 84 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	85	736		set __D0main, 0
+0	84	739	#line 84 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	85	739		replace __main_7qG2_fileheader_7qG2_000, __main_7qG2_fileheader_7qG2_000, __signed_stack_001main, __D0main
+0	84	744	#line 84 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	84	744	#line 84 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	85	744		set __signed_stack_001main, 9
+0	84	747	#line 84 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	85	747	#line 85 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	86	747		set __D0main, 54
+0	85	750	#line 85 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	86	750		replace __main_7qG2_fileheader_7qG2_000, __main_7qG2_fileheader_7qG2_000, __signed_stack_001main, __D0main
+0	85	755	#line 85 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	85	755	#line 85 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	86	755	#pragma macro 8
+0	86	755		mov __FWriteArgs.FileHandle, __main_7qG2_filehandle_7qG2_000
+0	86	757		mov __FWriteArgs.Buffer, __main_7qG2_fileheader_7qG2_000
+0	86	759		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	86	762		syscall 4, __FWriteArgs
+0	86	765		mov __D0main, __FWriteArgs.Result
+0	86	767		mov __main_7qG2_con_7qG2_000, __FWriteArgs.Length
+0	6612	769	#line 6612 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	85	769	#line 85 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	85	769	#line 85 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	87	769	#line 87 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	88	769		set __signed_stack_001main, 0
+0	87	772	#line 87 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	88	772	#line 88 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	89	772		set __D0main, 40
+0	88	775	#line 88 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	89	775		replace __main_7qG2_infoheader_7qG2_000, __main_7qG2_infoheader_7qG2_000, __signed_stack_001main, __D0main
+0	88	780	#line 88 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	88	780	#line 88 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	89	780		set __signed_stack_001main, 4
+0	88	783	#line 88 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	89	783	#line 89 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	90	783		set __D0main, 64
+0	89	786	#line 89 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	90	786		replace __main_7qG2_infoheader_7qG2_000, __main_7qG2_infoheader_7qG2_000, __signed_stack_001main, __D0main
+0	89	791	#line 89 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	89	791	#line 89 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	90	791		set __signed_stack_001main, 8
+0	89	794	#line 89 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	90	794	#line 90 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	91	794		set __D0main, 100
+0	90	797	#line 90 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	91	797		replace __main_7qG2_infoheader_7qG2_000, __main_7qG2_infoheader_7qG2_000, __signed_stack_001main, __D0main
+0	90	802	#line 90 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	90	802	#line 90 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	91	802		set __signed_stack_001main, 12
+0	90	805	#line 90 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	91	805	#line 91 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	92	805		set __D0main, 1
+0	91	808	#line 91 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	92	808		replace __main_7qG2_infoheader_7qG2_000, __main_7qG2_infoheader_7qG2_000, __signed_stack_001main, __D0main
+0	91	813	#line 91 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	91	813	#line 91 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	92	813		set __signed_stack_001main, 14
+0	91	816	#line 91 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	92	816	#line 92 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	93	816		set __D0main, 24
+0	92	819	#line 92 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	93	819		replace __main_7qG2_infoheader_7qG2_000, __main_7qG2_infoheader_7qG2_000, __signed_stack_001main, __D0main
+0	92	824	#line 92 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	92	824	#line 92 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	93	824		set __signed_stack_001main, 19
+0	92	827	#line 92 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	93	827	#line 93 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	94	827		set __D0main, 0
+0	93	830	#line 93 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	94	830		replace __main_7qG2_infoheader_7qG2_000, __main_7qG2_infoheader_7qG2_000, __signed_stack_001main, __D0main
+0	93	835	#line 93 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	93	835	#line 93 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	94	835		set __signed_stack_001main, 23
+0	93	838	#line 93 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	94	838	#line 94 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	95	838		set __D0main, 0
+0	94	841	#line 94 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	95	841		replace __main_7qG2_infoheader_7qG2_000, __main_7qG2_infoheader_7qG2_000, __signed_stack_001main, __D0main
+0	94	846	#line 94 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	94	846	#line 94 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	95	846	#pragma macro 8
+0	95	846		mov __FWriteArgs.FileHandle, __main_7qG2_filehandle_7qG2_000
+0	95	848		mov __FWriteArgs.Buffer, __main_7qG2_infoheader_7qG2_000
+0	95	850		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	95	853		syscall 4, __FWriteArgs
+0	95	856		mov __D0main, __FWriteArgs.Result
+0	95	858		mov __main_7qG2_con_7qG2_000, __FWriteArgs.Length
+0	6707	860	#line 6707 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	94	860	#line 94 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	94	860	#line 94 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	97	860	#line 97 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	98	860		set i, 6400
+0	97	863	#line 97 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	97	863	#line 97 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	98	863	#line 98 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	99	863		set __signed_stack_001main, 50
+0	99	866	#line 99 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	99	866	#line 99 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	100	866		sub __signed_stack_001main, __signed_stack_001main, __constVal1
+0	99	870	#line 99 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	100	870		brtst 0, __NXC_Label_777, __signed_stack_001main
+0	100	873	#line 100 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	101	873		set __signed_stack_002main, 64
+0	101	876	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	101	876	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	102	876		sub __signed_stack_002main, __signed_stack_002main, __constVal1
+0	101	880	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	102	880		brtst 0, __NXC_Label_781, __signed_stack_002main
+0	101	883	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	102	883		mov __signed_stack_003main, i
+0	101	885	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	101	885	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	102	885		index __ArrHelper__main_73_0, values, __signed_stack_003main
+0	101	889	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	102	889		mov __signed_stack_003main, __ArrHelper__main_73_0
+0	101	891	#line 101 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	102	891	#line 102 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	103	891		set __D0main, 350
+0	102	894	#line 102 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	103	894		cmp 0, __zfmain, __signed_stack_003main, __D0main
+0	102	898	#line 102 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	103	898		mov __D0main, __zfmain
+0	103	900	#line 103 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	104	900		brtst 4, __NXC_Label_788, __zfmain
+0	103	903	#line 103 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	104	903		set __signed_stack_003main, 0
+0	103	906	#line 103 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	104	906	#line 104 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	105	906		set __D0main, 0
+0	104	909	#line 104 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	105	909		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	104	914	#line 104 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	104	914	#line 104 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	105	914		set __signed_stack_003main, 1
+0	104	917	#line 104 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	105	917	#line 105 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	106	917		set __D0main, 0
+0	105	920	#line 105 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	106	920		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	105	925	#line 105 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	105	925	#line 105 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	106	925		set __signed_stack_003main, 2
+0	105	928	#line 105 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	106	928	#line 106 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	107	928		set __D0main, 0
+0	106	931	#line 106 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	107	931		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	106	936	#line 106 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	106	936	#line 106 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	107	936	#pragma macro 8
+0	107	936		mov __FWriteArgs.FileHandle, __main_7qG2_filehandle_7qG2_000
+0	107	938		mov __FWriteArgs.Buffer, __main_7qG2_points_7qG2_000
+0	107	940		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	107	943		syscall 4, __FWriteArgs
+0	107	946		mov __D0main, __FWriteArgs.Result
+0	107	948		mov __main_7qG2_con_7qG2_000, __FWriteArgs.Length
+0	6801	950	#line 6801 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	106	950	#line 106 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	106	950	#line 106 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	110	950	#line 110 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	111	950		jmp __NXC_Label_801
+0	110	952	#line 110 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	111	952		set __signed_stack_003main, 0
+0	110	955	#line 110 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	111	955	#line 111 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	112	955		set __D0main, 255
+0	111	958	#line 111 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	112	958		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	111	963	#line 111 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	111	963	#line 111 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	112	963		set __signed_stack_003main, 1
+0	111	966	#line 111 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	112	966	#line 112 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	113	966		set __D0main, 255
+0	112	969	#line 112 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	113	969		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	112	974	#line 112 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	112	974	#line 112 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	113	974		set __signed_stack_003main, 2
+0	112	977	#line 112 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	113	977	#line 113 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	114	977		set __D0main, 255
+0	113	980	#line 113 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	114	980		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	113	985	#line 113 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	113	985	#line 113 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	114	985	#pragma macro 8
+0	114	985		mov __FWriteArgs.FileHandle, __main_7qG2_filehandle_7qG2_000
+0	114	987		mov __FWriteArgs.Buffer, __main_7qG2_points_7qG2_000
+0	114	989		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	114	992		syscall 4, __FWriteArgs
+0	114	995		mov __D0main, __FWriteArgs.Result
+0	114	997		mov __main_7qG2_con_7qG2_000, __FWriteArgs.Length
+0	6847	999	#line 6847 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	113	999	#line 113 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	113	999	#line 113 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	115	999	#line 115 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	116	999	#line 116 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	117	999		sub i, i, __constVal1
+0	116	1003	#line 116 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	117	1003	#line 117 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	118	1003		jmp __NXC_Label_780
+0	117	1005	#line 117 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	118	1005	#line 118 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	118	1005	#line 118 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	119	1005		sub i, i, __constVal64
+0	118	1009	#line 118 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	119	1009	#line 119 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	120	1009		set __signed_stack_002main, 64
+0	120	1012	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	120	1012	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	121	1012		sub __signed_stack_002main, __signed_stack_002main, __constVal1
+0	120	1016	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	121	1016		brtst 0, __NXC_Label_817, __signed_stack_002main
+0	120	1019	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	121	1019		mov __signed_stack_003main, i
+0	120	1021	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	120	1021	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	121	1021		index __ArrHelper__main_73_0, values, __signed_stack_003main
+0	120	1025	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	121	1025		mov __signed_stack_003main, __ArrHelper__main_73_0
+0	120	1027	#line 120 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	121	1027	#line 121 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	122	1027		set __D0main, 350
+0	121	1030	#line 121 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	122	1030		cmp 0, __zfmain, __signed_stack_003main, __D0main
+0	121	1034	#line 121 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	122	1034		mov __D0main, __zfmain
+0	122	1036	#line 122 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	123	1036		brtst 4, __NXC_Label_824, __zfmain
+0	122	1039	#line 122 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	123	1039		set __signed_stack_003main, 0
+0	122	1042	#line 122 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	123	1042	#line 123 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	124	1042		set __D0main, 0
+0	123	1045	#line 123 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	124	1045		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	123	1050	#line 123 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	123	1050	#line 123 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	124	1050		set __signed_stack_003main, 1
+0	123	1053	#line 123 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	124	1053	#line 124 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	125	1053		set __D0main, 0
+0	124	1056	#line 124 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	125	1056		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	124	1061	#line 124 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	124	1061	#line 124 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	125	1061		set __signed_stack_003main, 2
+0	124	1064	#line 124 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	125	1064	#line 125 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	126	1064		set __D0main, 0
+0	125	1067	#line 125 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	126	1067		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	125	1072	#line 125 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	125	1072	#line 125 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	126	1072	#pragma macro 8
+0	126	1072		mov __FWriteArgs.FileHandle, __main_7qG2_filehandle_7qG2_000
+0	126	1074		mov __FWriteArgs.Buffer, __main_7qG2_points_7qG2_000
+0	126	1076		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	126	1079		syscall 4, __FWriteArgs
+0	126	1082		mov __D0main, __FWriteArgs.Result
+0	126	1084		mov __main_7qG2_con_7qG2_000, __FWriteArgs.Length
+0	6939	1086	#line 6939 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	125	1086	#line 125 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	125	1086	#line 125 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	129	1086	#line 129 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	130	1086		jmp __NXC_Label_837
+0	129	1088	#line 129 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	130	1088		set __signed_stack_003main, 0
+0	129	1091	#line 129 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	130	1091	#line 130 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	131	1091		set __D0main, 255
+0	130	1094	#line 130 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	131	1094		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	130	1099	#line 130 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	130	1099	#line 130 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	131	1099		set __signed_stack_003main, 1
+0	130	1102	#line 130 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	131	1102	#line 131 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	132	1102		set __D0main, 255
+0	131	1105	#line 131 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	132	1105		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	131	1110	#line 131 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	131	1110	#line 131 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	132	1110		set __signed_stack_003main, 2
+0	131	1113	#line 131 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	132	1113	#line 132 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	133	1113		set __D0main, 255
+0	132	1116	#line 132 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	133	1116		replace __main_7qG2_points_7qG2_000, __main_7qG2_points_7qG2_000, __signed_stack_003main, __D0main
+0	132	1121	#line 132 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	132	1121	#line 132 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	133	1121	#pragma macro 8
+0	133	1121		mov __FWriteArgs.FileHandle, __main_7qG2_filehandle_7qG2_000
+0	133	1123		mov __FWriteArgs.Buffer, __main_7qG2_points_7qG2_000
+0	133	1125		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	133	1128		syscall 4, __FWriteArgs
+0	133	1131		mov __D0main, __FWriteArgs.Result
+0	133	1133		mov __main_7qG2_con_7qG2_000, __FWriteArgs.Length
+0	6985	1135	#line 6985 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	132	1135	#line 132 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	132	1135	#line 132 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	134	1135	#line 134 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	135	1135	#line 135 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	136	1135		add i, i, __constVal1
+0	135	1139	#line 135 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	136	1139	#line 136 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	137	1139		jmp __NXC_Label_816
+0	136	1141	#line 136 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	137	1141	#line 137 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	137	1141	#line 137 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	138	1141		sub i, i, __constVal64
+0	137	1145	#line 137 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	138	1145	#line 138 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	139	1145		jmp __NXC_Label_776
+0	138	1147	#line 138 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	138	1147	#line 138 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	139	1147	#pragma macro 5
+0	139	1147		mov __FCArgs.FileHandle, __main_7qG2_filehandle_7qG2_000
+0	139	1149		syscall 5, __FCArgs
+0	139	1152		mov __D0main, __FCArgs.Result
+0	7009	1154	#line 7009 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	138	1154	#line 138 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	138	1154	#line 138 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+0	139	1154		exit -1, -1
+1	4476	0		brtst 4, __rotate_Done0, __rotate_angle0
+1	4477	3		sign __rotate_thePower0, __rotate_angle0
+1	4478	6		abs __rotate_theAngle0, __rotate_angle0
+1	4479	9		mul __rotate_thePower0, __rotate_thePower0, __rotate_power0
+1	4481	13		set __rotate_theUF0, 23
+1	4482	16		brtst 4, __rotate_NoSync0, __rotate_sync0
+1	4483	19		set __rotate_theOM0, 7
+1	4484	22		set __rotate_theRM0, 2
+1	4485	25		mov __rotate_theTurnPct0, __rotate_turnpct0
+1	4486	27		brtst 4, __rotate_Start0, __rotate_theTurnPct0
+1	4487	30		add __rotate_theUF0, __rotate_theUF0, __constVal32
+1	4488	34		jmp __rotate_Start0
+1	4490	36		set __rotate_theOM0, 3
+1	4491	39		set __rotate_theRM0, 0
+1	4492	42		set __rotate_theTurnPct0, 0
+1	4494	45		set __rotate_theRS0, 32
+1	4495	48		setout __rotate_ports0, 1, __rotate_theOM0, 8, __rotate_theRM0, 5, __rotate_theAngle0, 6, __rotate_theRS0, 10, __rotate_theRVP0, 11, __rotate_theRVI0, 12, __rotate_theRVD0, 2, __rotate_thePower0, 7, __rotate_turnpct0, 0, __rotate_theUF0
+1	4498	71		index __rotate_firstPort0, __rotate_ports0, 65535
+1	4500	75		getout __rotate_power0, __rotate_firstPort0, 2
+1	4501	79		brtst 4, __rotate_doneRunning0, __rotate_power0
+1	4502	82		getout __rotate_rs0, __rotate_firstPort0, 6
+1	4503	86		brcmp 4, __rotate_Running0, __rotate_rs0, __constVal32
+1	4505	90		brtst 4, __rotate_Reset0, __rotate_stop0
+1	4507	93		set __rotate_theOM0, 7
+1	4508	96		set __rotate_theUF0, 7
+1	4509	99		setout __rotate_ports0, 1, __rotate_theOM0, 8, __constVal1, 6, __rotate_theRS0, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF0
+1	4511	114		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	4513	118		mov __rotate_OldRotCount0, __rotate_RotCount0
+1	4514	120		wait 50
+1	4516	122		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	4517	126		brcmp 5, __rotate_Stabilize0, __rotate_OldRotCount0, __rotate_RotCount0
+1	4518	130		set __rotate_theOM0, 4
+1	4519	133		setout __rotate_ports0, 8, __rotate_theRM0, 6, __constVal0, 1, __rotate_theOM0, 0, __constVal1
+1	4522	144		brtst 4, __rotate_Done0, __rotate_theTurnPct0
+1	4523	147		setout __rotate_ports0, 0, __constVal32
+1	4525	152		subret ____RotateMotor0_return
+2	4529	0		brtst 4, __rotate_Done1, __rotate_angle1
+2	4530	3		sign __rotate_thePower1, __rotate_angle1
+2	4531	6		abs __rotate_theAngle1, __rotate_angle1
+2	4532	9		mul __rotate_thePower1, __rotate_thePower1, __rotate_power1
+2	4534	13		set __rotate_theUF1, 23
+2	4535	16		brtst 4, __rotate_NoSync1, __rotate_sync1
+2	4536	19		set __rotate_theOM1, 7
+2	4537	22		set __rotate_theRM1, 2
+2	4538	25		mov __rotate_theTurnPct1, __rotate_turnpct1
+2	4539	27		brtst 4, __rotate_Start1, __rotate_theTurnPct1
+2	4540	30		add __rotate_theUF1, __rotate_theUF1, __constVal32
+2	4541	34		jmp __rotate_Start1
+2	4543	36		set __rotate_theOM1, 3
+2	4544	39		set __rotate_theRM1, 0
+2	4545	42		set __rotate_theTurnPct1, 0
+2	4547	45		set __rotate_theRS1, 32
+2	4548	48		setout __rotate_ports1, 1, __rotate_theOM1, 8, __rotate_theRM1, 5, __rotate_theAngle1, 6, __rotate_theRS1, 10, __rotate_theRVP1, 11, __rotate_theRVI1, 12, __rotate_theRVD1, 2, __rotate_thePower1, 7, __rotate_turnpct1, 0, __rotate_theUF1
+2	4551	71		index __rotate_firstPort1, __rotate_ports1, 65535
+2	4553	75		getout __rotate_power1, __rotate_firstPort1, 2
+2	4554	79		brtst 4, __rotate_doneRunning1, __rotate_power1
+2	4555	82		getout __rotate_rs1, __rotate_firstPort1, 6
+2	4556	86		brcmp 4, __rotate_Running1, __rotate_rs1, __constVal32
+2	4558	90		brtst 4, __rotate_Reset1, __rotate_stop1
+2	4560	93		set __rotate_theOM1, 7
+2	4561	96		set __rotate_theUF1, 7
+2	4562	99		setout __rotate_ports1, 1, __rotate_theOM1, 8, __constVal1, 6, __rotate_theRS1, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF1
+2	4564	114		getout __rotate_RotCount1, __rotate_firstPort1, 14
+2	4566	118		mov __rotate_OldRotCount1, __rotate_RotCount1
+2	4567	120		wait 50
+2	4569	122		getout __rotate_RotCount1, __rotate_firstPort1, 14
+2	4570	126		brcmp 5, __rotate_Stabilize1, __rotate_OldRotCount1, __rotate_RotCount1
+2	4571	130		set __rotate_theOM1, 4
+2	4572	133		setout __rotate_ports1, 8, __rotate_theRM1, 6, __constVal0, 1, __rotate_theOM1, 0, __constVal1
+2	4575	144		brtst 4, __rotate_Done1, __rotate_theTurnPct1
+2	4576	147		setout __rotate_ports1, 0, __constVal32
+2	4578	152		subret ____RotateMotor1_return
+3	4885	0		setin __constVal1, __ResetSensorPort, 5
+3	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+3	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+3	4889	11		subret ____ResetSensorSubroutine_return
+4	142	0	#line 142 "C:\Projects\nxt\scanner_v3\Untitled2.nxc"
+4	143	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Projects\nxt\scanner_v3\Untitled2.nxc
+1	__RotateMotor0	1157	NXTDefs.h
+2	__RotateMotor1	1311	NXTDefs.h
+3	__ResetSensorSubroutine	1465	NXTDefs.h
+4	__initialize_global_data	1478	C:\Projects\nxt\scanner_v3\Untitled2.nxc
