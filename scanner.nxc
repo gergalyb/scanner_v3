@@ -1,29 +1,24 @@
 
 
-int values[6600][3];
+byte r [6400];
+byte g [6400];
+byte b [6400];
 int x=0;
 int y=0;
 int i=0;
 int a;
-int b[10];
+int c[10];
 int rawdata[3];
+byte temp=0;
+int s=0;
+int e=0;
+byte points [3];
 
 task main()
 {
      SetSensorTouch(IN_1);
      SetSensorTouch(IN_2);
-     //SetSensorColorFull(IN_3);
      SetSensorColorFull(IN_3);
-     
-     //ArrayInit(values,0,6600);
-     repeat(6500)
-     {
-                 values[i][0]=90;
-                 values[i][1]=90;
-                 values[i][2]=90;
-     }
-     i=0;
-
 
      OnRev(OUT_B,40);
      until(Sensor(IN_1)==1);
@@ -39,21 +34,24 @@ task main()
      Off(OUT_A);
      RotateMotor(OUT_B,100,-350);
      //RotateMotor(OUT_B,50,50);
-     
-     repeat(25)
+
+     repeat(10)
      {
                 repeat(64)
                 {
                           RotateMotorEx(OUT_B,100,11,0,0,0);
                           if (Sensor(IN_3)==1)
                           {
-                             PointOut(x,y,0);
+                             //PointOut(x,y,0);
                           }
                           y++;
-                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
-                          values[i][0]=rawdata[0];
-                          values[i][1]=rawdata[1];
-                          values[i][2]=rawdata[2];
+                          ReadSensorColorEx(IN_3,a,c,c,rawdata);
+                          r[i]=rawdata[0]*0.5;
+                          g[i]=rawdata[1]*0.5;
+                          b[i]=rawdata[2]*0.5;
+                          NumOut(10,50,r[i]*0.5,1);
+                          NumOut(10,40,g[i]*0.5,1);
+                          NumOut(10,30,b[i]*0.5,1);
                           i++;
                 }
                 Off(OUT_B);
@@ -64,13 +62,16 @@ task main()
                           RotateMotorEx(OUT_B,100,-11,0,0,0);
                           if (Sensor(IN_3)==1)
                           {
-                             PointOut(x,y,0);
+                             //PointOut(x,y,0);
                           }
                           y--;
-                          ReadSensorColorEx(IN_3,a,b,b,rawdata);
-                          values[i][0]=rawdata[0];
-                          values[i][1]=rawdata[1];
-                          values[i][2]=rawdata[2];
+                          ReadSensorColorEx(IN_3,a,c,c,rawdata);
+                          r[i]=rawdata[0]*0.5;
+                          g[i]=rawdata[1]*0.5;
+                          b[i]=rawdata[2]*0.5;
+                          NumOut(10,50,r[i]*0.5,1);
+                          NumOut(10,40,g[i]*0.5,1);
+                          NumOut(10,30,b[i]*0.5,1);
                           i++;
                 }
                 Off(OUT_B);
@@ -109,27 +110,63 @@ task main()
      infoheader[23]=0;
      WriteBytes(filehandle,infoheader,con);
 
-     i=6400;
+     i=0;
      repeat(50)
      {
-               repeat(64)
+               s=i;
+               e=s+63;
+               repeat(32)
                {
-                    points[0]=values[i][2]-80;
-                    points[1]=values[i][1]-80;
-                    points[2]=values[i][0]-80;
-                    WriteBytes(filehandle,points,con);
-                    i--;
+                         temp=r[e];
+                         r[e]=r[s];
+                         r[s]=temp;
+                         
+                         temp=g[e];
+                         g[e]=g[s];
+                         g[s]=temp;
+                         
+                         temp=b[e];
+                         b[e]=b[s];
+                         b[s]=temp;
+                         
+                         s++;
+                         e--;
+                         //NumOut(10,10,temp,1);
+                         //Wait(10);
                }
-               i-=64;
-               repeat(64)
-               {
-                    points[0]=values[i][0]-80;
-                    points[1]=values[i][1]-80;
-                    points[2]=values[i][2]-80;
-                    WriteBytes(filehandle,points,con);
-                    i++;
-               }
-               i-=64;
+               i=128+i;
+     }
+     
+     i=6399;
+     repeat(6400)
+     {
+                 points[0]=b[i];
+                 points[1]=g[i];
+                 points[2]=r[i];
+                 WriteBytes(filehandle,points,con);
+                 i--;
+     }
+     
+     i=0;
+     ClearScreen();
+     repeat(6400)
+     {
+                 if(r[i]<0 || r[i]>255)
+                 {
+                           NumOut(10,50,r[i],0);
+                           Wait(500);
+                 }
+                 if(g[i]<0 || g[i]>255)
+                 {
+                           NumOut(10,40,g[i],0);
+                           Wait(500);
+                 }
+                 if(b[i]<0 || b[i]>255)
+                 {
+                           NumOut(10,30,b[i],0);
+                           Wait(500);
+                 }
+                 i++;
      }
      CloseFile(filehandle);
 }
