@@ -110,7 +110,7 @@ task main()
      infoheader[23]=0;
      WriteBytes(filehandle,infoheader,con);
 
-     i=64;
+     i=0;
      repeat(50)
      {
                s=i;
@@ -131,8 +131,8 @@ task main()
                          
                          s++;
                          e--;
-                         NumOut(10,10,temp,1);
-                         Wait(10);
+                         //NumOut(10,10,temp,1);
+                         //Wait(10);
                }
                i=128+i;
      }
