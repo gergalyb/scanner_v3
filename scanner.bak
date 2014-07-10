@@ -4,40 +4,123 @@
 byte r [6400];
 byte g [6400];
 byte b [6400];
-int x=0;
-int y=0;
-int i=0;
-int a;
-int c[10];
-int rawdata[3];
+unsigned int x=0, y=0;
+unsigned int i=1, k=0;
+unsigned int a;
+unsigned int c[10];
+unsigned int raw[3];
 byte temp=0;
-int s=0;
-int e=0;
+unsigned int s=0, e=0;
 byte points [3];
-int filehandle;
+unsigned int filehandle;
 byte con;
+unsigned int rBottom, gBottom, bBottom;
+unsigned int rTop, gTop, bTop;
+float rCal, gCal, bCal;
+
+unsigned int page=0, displayphase=0;
+
+void InitSensors()
+{
+    SetSensorTouch(IN_1);
+    SetSensorTouch(IN_2);
+    SetSensorColorFull(IN_3);
+}
+
+void InitPaper()
+{
+ 		 OnRev(OUT_B,40);
+     until(Sensor(IN_1)==1);
+     Off(OUT_B);
+     RotateMotor(OUT_B,100,450);
+     //until(Sensor(IN_2)==1);
+     OnFwd(OUT_A,40);
+     until(Sensor(IN_3)==3); //GREEN
+     Off(OUT_A);
+     RotateMotor(OUT_A,40,6);
+     RotateMotor(OUT_B,100,-450);
+     
+     ReadSensorColorEx(IN_3,a,raw,c,c);
+     rBottom=raw[0];
+     gBottom=raw[1];
+     bBottom=raw[2];
+     RotateMotor(OUT_B,100,240);
+     ReadSensorColorEx(IN_3,a,raw,c,c);
+     rTop=raw[0];
+     RotateMotor(OUT_B,100,240);
+     ReadSensorColorEx(IN_3,a,raw,c,c);
+     gTop=raw[1];
+     RotateMotor(OUT_B,100,240);
+     ReadSensorColorEx(IN_3,a,raw,c,c);
+     bTop=raw[2];
+     RotateMotor(OUT_B,100,-700);
+     
+     rCal=180/(rTop-rBottom);
+     gCal=180/(gTop-gBottom);
+     bCal=180/(bTop-bBottom);
+     rBottom-=30;
+     gBottom-=30;
+		 bBottom-=30;
+		 /*NumOut(0,50,rBottom,0);
+		 NumOut(20,50,rTop,0);
+		 NumOut(40,50,rCal,0);
+		 NumOut(0,40,gBottom,0);
+		 NumOut(20,40,gTop,0);
+		 NumOut(40,40,gCal,0);
+		 NumOut(0,30,bBottom,0);
+		 NumOut(20,30,bTop,0);
+		 NumOut(40,30,bCal,0);
+	 until(Sensor(IN_2)==1);*/
+}
+
+void ReadData()
+{
+    ReadSensorColorEx(IN_3,a,raw,c,c);
+		r[i]=(raw[0]-rBottom)*rCal;
+		g[i]=(raw[1]-gBottom)*gCal;
+		b[i]=(raw[2]-bBottom)*bCal;
+}
+
+task display()
+{
+		while(page==0)
+		{
+						while(displayphase==0) //INIT
+						{
+					         ProgressBarUnspecified(k,"INITIALIZING...");
+							 		 k+=5;
+					 				 if(k>100){k=0;}
+					 				 Wait(50);
+					 				 ClearScreen();
+						}
+						k=0;
+						
+						while(displayphase==1) //SCANNING
+						{
+												ProgressBarSpecified(i/64,"SCANNING...");
+												Wait(100);
+												ClearScreen();
+						}
+						
+						while(displayphase==2) //WRITING TO FILE
+						{
+									 ProgressBarUnspecified(k,"WRITING TO FILE...");
+									 k+=5;
+									 if(k>100){k=0;}
+									 Wait(50);
+									 ClearScreen();
+						}
+						k=0;
+		}
+}
 
 task main()
 {
-     SetSensorTouch(IN_1);
-     SetSensorTouch(IN_2);
-     SetSensorColorFull(IN_3);
-
-     OnRev(OUT_B,40);
-     until(Sensor(IN_1)==1);
-     Off(OUT_B);
-     RotateMotor(OUT_B,100,400);
-     //until(Sensor(IN_2)==1);
-     OnFwd(OUT_A,40);
-     until(Sensor(IN_3)==6);
-     Wait(100);
-     until(Sensor(IN_3)==1);
-     Wait(100);
-     until(Sensor(IN_3)==6);
-     Off(OUT_A);
-     RotateMotor(OUT_B,100,-350);
-     //RotateMotor(OUT_B,50,50);
-
+		StartTask(display);
+		displayphase=0;
+		InitSensors();
+		InitPaper();
+		displayphase=1;
      repeat(50)
      {
                 repeat(64)
@@ -45,13 +128,10 @@ task main()
                           RotateMotorEx(OUT_B,100,11,0,0,0);
                           if (Sensor(IN_3)==1)
                           {
-                             PointOut(x,y,0);
+                             //PointOut(x,y,0);
                           }
                           y++;
-                          ReadSensorColorEx(IN_3,a,c,c,rawdata);
-                          r[i]=rawdata[0]*0,85;
-                          g[i]=rawdata[1]*0,85;
-                          b[i]=rawdata[2]*0,85;
+													ReadData();
                           i++;
                 }
                 Off(OUT_B);
@@ -62,19 +142,18 @@ task main()
                           RotateMotorEx(OUT_B,100,-11,0,0,0);
                           if (Sensor(IN_3)==1)
                           {
-                             PointOut(x,y,0);
+                             //PointOut(x,y,0);
                           }
                           y--;
-                          ReadSensorColorEx(IN_3,a,c,c,rawdata);
-                          r[i]=rawdata[0]*0,85;
-                          g[i]=rawdata[1]*0,85;
-                          b[i]=rawdata[2]*0,85;
+													ReadData();
                           i++;
                 }
                 Off(OUT_B);
      						RotateMotor(OUT_A,60,7);
                 x++;
      }
+     
+     displayphase=2;
      
      //filehandle=CreateBMP("image",100,64);
      byte fileheader[];
@@ -146,4 +225,5 @@ task main()
      }
      
      CloseFile(filehandle);
+     RotateMotor(OUT_A,100,-850);
 }

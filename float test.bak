@@ -1,0 +1,9 @@
+task main()
+{
+		int a=230;
+		int c=261;
+		float b;
+		b=a/c;
+		NumOut(10,10,b,0);
+		Wait(10000000);
+}

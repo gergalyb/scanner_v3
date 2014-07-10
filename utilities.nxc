@@ -91,3 +91,18 @@ int CreateBMP(string name,int h,int l)
     WriteBytes(filehandle,infoheader,con);
     return(filehandle);
 }
+
+void ProgressBarUnspecified(int a,string text)
+{
+		a-=10;
+    RectOut(0,0,99,10,0);
+    RectOut(a,0,20,10,0x0020);
+    TextOut(0,15,text,0);
+}
+
+void ProgressBarSpecified(int a, string text)
+{
+		RectOut(0,0,99,10,0);
+		RectOut(0,0,a,10,0x0020);
+		TextOut(0,15,text,0);
+}
