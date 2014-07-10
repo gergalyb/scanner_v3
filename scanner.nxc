@@ -1,4 +1,5 @@
-
+#include "NXCDefs.h"
+#include "utilities.nxc"
 
 byte r [6400];
 byte g [6400];
@@ -13,6 +14,8 @@ byte temp=0;
 int s=0;
 int e=0;
 byte points [3];
+int filehandle;
+byte con;
 
 task main()
 {
@@ -46,9 +49,9 @@ task main()
                           }
                           y++;
                           ReadSensorColorEx(IN_3,a,c,c,rawdata);
-                          r[i]=rawdata[0];
-                          g[i]=rawdata[1];
-                          b[i]=rawdata[2];
+                          r[i]=rawdata[0]-40;
+                          g[i]=rawdata[1]-40;
+                          b[i]=rawdata[2]-40;
                           i++;
                 }
                 Off(OUT_B);
@@ -63,25 +66,22 @@ task main()
                           }
                           y--;
                           ReadSensorColorEx(IN_3,a,c,c,rawdata);
-                          r[i]=rawdata[0];
-                          g[i]=rawdata[1];
-                          b[i]=rawdata[2];
+                          r[i]=rawdata[0]-40;
+                          g[i]=rawdata[1]-40;
+                          b[i]=rawdata[2]-40;
                           i++;
                 }
                 Off(OUT_B);
-                RotateMotor(OUT_A,60,7);
+     						RotateMotor(OUT_A,60,7);
                 x++;
      }
      
+     //filehandle=CreateBMP("image",100,64);
      byte fileheader[];
      byte infoheader[];
-     byte points[];
-     int filehandle;
-     byte con;
 
      ArrayInit(fileheader,0,14);
      ArrayInit(infoheader,0,40);
-     ArrayInit(points,0,3);
 
      DeleteFile("image.bmp");
      CreateFile("image.bmp",19254,filehandle);
@@ -91,7 +91,7 @@ task main()
      fileheader[2]=54;
      fileheader[3]=75;
      fileheader[4]=0;
-     fileheader[5]=0;
+		 fileheader[5]=0;
      fileheader[9]=54;
      WriteBytes(filehandle,fileheader,con);
 
@@ -111,6 +111,10 @@ task main()
                e=s+63;
                repeat(32)
                {
+                         //ArraySwap(r,s,e);
+                         //ArraySwap(g,s,e);
+                         //ArraySwap(b,s,e);
+
                          temp=r[e];
                          r[e]=r[s];
                          r[s]=temp;

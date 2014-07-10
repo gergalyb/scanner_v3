@@ -1,0 +1,92 @@
+//##############################################################################
+//utilities
+//##############################################################################
+
+
+
+void ArraySwap(int array[],int s,int e) //Swaps the two values (ArrayName, index1, index2)
+{
+   int temp;
+   temp=array[e];
+   array[e]=array[s];
+   array[s]=temp;
+}
+
+bool StringCompare (string a, string b) //Compares two strings (string1, string2) [true if equal]
+{
+   bool equal = false;
+   byte strlen1 = StrLen(a);
+   byte strlen2 = StrLen(b);
+   byte minlen = strlen1;
+   if (strlen2<minlen) minlen = strlen2;
+   for (int i = 0; i<minlen; i++)
+   {
+      if (SubStr(a,i,i+1) == SubStr(b,i,i+1)) equal = true;
+   }
+   return equal;
+}
+
+bool ConnectNXT ( const string name , byte channel ) //Connects to desired NXT (NXTname, channel) [true if succesful]
+{
+   byte index, trials;
+   byte event;
+   for ( byte i=0; i<BTDeviceCount(); i++ )
+   {
+      if (StringCompare(BTDeviceName(i), name)) index = i;
+   }
+   CommExecuteFunctionType cefArgs;
+   cefArgs.Cmd = INTF_CONNECT;
+   cefArgs.Param1 = index;
+   cefArgs.Param2 = channel;
+   trials = 0;
+   event = 0;
+   while (event==0)
+   {
+      SysCommExecuteFunction(cefArgs);
+      Wait(500);
+      trials++;
+      if (cefArgs.Result == LDR_BTCONNECTFAIL) event = 1;
+      if (trials>20) event = 2;
+   }
+   if (event==2) return false;
+   if (event==1) return true;
+}
+
+int CreateBMP(string name,int h,int l)
+{
+    byte fileheader[];
+    byte infoheader[];
+    byte con;
+    int filehandle;
+    int temp1, temp2;
+    unsigned int filesize;
+    string nameBMP;
+    ArrayInit(fileheader,0,14);
+    ArrayInit(infoheader,0,40);
+    filesize=h*l*3+54;
+    temp1=filesize;
+    nameBMP=StrCat(name,".bmp");
+    DeleteFile(nameBMP);
+    CreateFile(nameBMP,filesize,filehandle);
+    while(temp1>=255)
+    {
+							 temp1-=256;
+    }
+    temp2=filesize-temp1/256;
+    fileheader[0]=66;
+    fileheader[1]=77;
+    fileheader[2]=temp1;
+    fileheader[3]=temp2;
+    fileheader[4]=0;
+    fileheader[5]=0;
+    fileheader[9]=54;
+    WriteBytes(filehandle,fileheader,con);
+    infoheader[0]=40;
+    infoheader[4]=l;
+    infoheader[8]=h;
+    infoheader[12]=1;
+    infoheader[14]=24;
+    infoheader[19]=0;
+    infoheader[23]=0;
+    WriteBytes(filehandle,infoheader,con);
+}

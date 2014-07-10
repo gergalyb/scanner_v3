@@ -1,0 +1,24 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	____initialize_global_data_return	1	1	0	1	3
+1	__ConnectNXT_7qG2_cefArgs_7qG2_000	8	0	7	16	1
+2	__ConnectNXT_7qG2_cefArgs_7qG2_000.Result	3	1	4	2	1
+3	__ConnectNXT_7qG2_cefArgs_7qG2_000.Cmd	1	1	6	1	1
+4	__ConnectNXT_7qG2_cefArgs_7qG2_000.Param1	1	1	7	1	1
+5	__ConnectNXT_7qG2_cefArgs_7qG2_000.Param2	1	1	8	1	1
+6	__ConnectNXT_7qG2_cefArgs_7qG2_000.Param3	1	1	9	1	1
+7	__ConnectNXT_7qG2_cefArgs_7qG2_000.Name	7	0	10	4	1
+8	__ConnectNXT_7qG2_cefArgs_7qG2_000.Name.Name_type	1	0	0	1	0
+9	__ConnectNXT_7qG2_cefArgs_7qG2_000.RetVal	3	1	12	2	1
+#SOURCES
+Clump	Line	PC	Source
+0	7	0	#line 7 "C:\Users\Benedek\AppData\Local\Temp\temp.nxc"
+0	8	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	7	2	#line 7 "C:\Users\Benedek\AppData\Local\Temp\temp.nxc"
+0	9	2		exit -1, -1
+1	56	0	#line 56 "C:\Users\Benedek\AppData\Local\Temp\temp.nxc"
+1	57	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Benedek\AppData\Local\Temp\temp.nxc
+1	__initialize_global_data	5	C:\Users\Benedek\AppData\Local\Temp\temp.nxc

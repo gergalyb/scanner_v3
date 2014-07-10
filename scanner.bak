@@ -1,4 +1,5 @@
-
+#include "NXCDefs.h"
+#include "utilities.nxc"
 
 byte r [6400];
 byte g [6400];
@@ -13,6 +14,8 @@ byte temp=0;
 int s=0;
 int e=0;
 byte points [3];
+int filehandle;
+byte con;
 
 task main()
 {
@@ -35,23 +38,20 @@ task main()
      RotateMotor(OUT_B,100,-350);
      //RotateMotor(OUT_B,50,50);
 
-     repeat(10)
+     repeat(50)
      {
                 repeat(64)
                 {
                           RotateMotorEx(OUT_B,100,11,0,0,0);
                           if (Sensor(IN_3)==1)
                           {
-                             //PointOut(x,y,0);
+                             PointOut(x,y,0);
                           }
                           y++;
                           ReadSensorColorEx(IN_3,a,c,c,rawdata);
-                          r[i]=rawdata[0]*0.5;
-                          g[i]=rawdata[1]*0.5;
-                          b[i]=rawdata[2]*0.5;
-                          NumOut(10,50,r[i]*0.5,1);
-                          NumOut(10,40,g[i]*0.5,1);
-                          NumOut(10,30,b[i]*0.5,1);
+                          r[i]=rawdata[0]*0,85;
+                          g[i]=rawdata[1]*0,85;
+                          b[i]=rawdata[2]*0,85;
                           i++;
                 }
                 Off(OUT_B);
@@ -62,32 +62,26 @@ task main()
                           RotateMotorEx(OUT_B,100,-11,0,0,0);
                           if (Sensor(IN_3)==1)
                           {
-                             //PointOut(x,y,0);
+                             PointOut(x,y,0);
                           }
                           y--;
                           ReadSensorColorEx(IN_3,a,c,c,rawdata);
-                          r[i]=rawdata[0]*0.5;
-                          g[i]=rawdata[1]*0.5;
-                          b[i]=rawdata[2]*0.5;
-                          NumOut(10,50,r[i]*0.5,1);
-                          NumOut(10,40,g[i]*0.5,1);
-                          NumOut(10,30,b[i]*0.5,1);
+                          r[i]=rawdata[0]*0,85;
+                          g[i]=rawdata[1]*0,85;
+                          b[i]=rawdata[2]*0,85;
                           i++;
                 }
                 Off(OUT_B);
-                RotateMotor(OUT_A,60,7);
+     						RotateMotor(OUT_A,60,7);
                 x++;
      }
      
+     //filehandle=CreateBMP("image",100,64);
      byte fileheader[];
      byte infoheader[];
-     byte points[];
-     int filehandle;
-     byte con;
 
      ArrayInit(fileheader,0,14);
      ArrayInit(infoheader,0,40);
-     ArrayInit(points,0,3);
 
      DeleteFile("image.bmp");
      CreateFile("image.bmp",19254,filehandle);
@@ -97,7 +91,7 @@ task main()
      fileheader[2]=54;
      fileheader[3]=75;
      fileheader[4]=0;
-     fileheader[5]=0;
+		 fileheader[5]=0;
      fileheader[9]=54;
      WriteBytes(filehandle,fileheader,con);
 
@@ -117,6 +111,10 @@ task main()
                e=s+63;
                repeat(32)
                {
+                         //ArraySwap(r,s,e);
+                         //ArraySwap(g,s,e);
+                         //ArraySwap(b,s,e);
+
                          temp=r[e];
                          r[e]=r[s];
                          r[s]=temp;
@@ -147,26 +145,5 @@ task main()
                  i--;
      }
      
-     i=0;
-     ClearScreen();
-     repeat(6400)
-     {
-                 if(r[i]<0 || r[i]>255)
-                 {
-                           NumOut(10,50,r[i],0);
-                           Wait(500);
-                 }
-                 if(g[i]<0 || g[i]>255)
-                 {
-                           NumOut(10,40,g[i],0);
-                           Wait(500);
-                 }
-                 if(b[i]<0 || b[i]>255)
-                 {
-                           NumOut(10,30,b[i],0);
-                           Wait(500);
-                 }
-                 i++;
-     }
      CloseFile(filehandle);
 }
