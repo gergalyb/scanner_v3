@@ -53,14 +53,14 @@ void InitPaper()
      RotateMotor(OUT_B,100,240);
      ReadSensorColorEx(IN_3,a,raw,c,c);
      bTop=raw[2];
-     RotateMotor(OUT_B,100,-700);
+     RotateMotor(OUT_B,100,-650);
      
      rCal=100/(rTop-rBottom);
      gCal=100/(gTop-gBottom);
      bCal=100/(bTop-bBottom);
-     rBottom-=5;
-     gBottom-=5;
-		 bBottom-=5;
+     rBottom-=30;
+     gBottom-=30;
+		 bBottom-=30;
 		 /*NumOut(0,50,rBottom,0);
 		 NumOut(20,50,rTop,0);
 		 NumOut(40,50,rCal,0);
